@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/249afc4e5f.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
@@ -15,7 +15,31 @@
     </header>
 
     <main>
-        <button>+ Add Book</button>
+        <form id="form">
+            <div class="field">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="field">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="field">
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages" required>
+            </div>
+            <h1>Have you read it?</h1>
+            <div>
+                <input type="radio" id="yes" name="button-check" value="yes">
+                <label>Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="button-check" value="no">
+                <label>No</label>
+            </div>
+        </form>
+        
+        <button type="submit" id="add">+ Add Book</button>
 
         <div id="books">
             <div class="book">
