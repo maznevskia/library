@@ -17,25 +17,25 @@
     <main>
         <form id="form">
             <div class="field">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title" required>
+                <input type="text" id="title" name="title" placeholder="Title" required>
             </div>
             <div class="field">
-                <label for="author">Author</label>
-                <input type="text" id="author" name="author" required>
+                <input type="text" id="author" name="author" placeholder="Author" required>
             </div>
             <div class="field">
-                <label for="pages">Pages</label>
-                <input type="number" id="pages" name="pages" required>
+                <input type="number" id="pages" name="pages" placeholder="Pages" required>
             </div>
-            <h1>Have you read it?</h1>
-            <div>
-                <input type="radio" id="yes" name="button-check" value="yes">
-                <label>Yes</label>
-            </div>
-            <div>
-                <input type="radio" id="no" name="button-check" value="no">
-                <label>No</label>
+            
+            <div class="field radio">
+                <p>Have you read it?</p>
+                <div>
+                    <input type="radio" id="yes" name="button-check" value="yes">
+                    <label>Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="button-check" value="no">
+                    <label>No</label>
+                </div>
             </div>
         </form>
         
@@ -46,13 +46,13 @@
                 <p>Book Title</p>
                 <p>Author Name</p>
                 <p>420 Pages</p>
-                <button id="isItRead">Read or Not</button>
+                <button class="isItRead">Read or Not</button>
                 <button id="remove">Remove</button>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="position: fixed; bottom: 0;">
         <p>
             Copyright ©
             <script>

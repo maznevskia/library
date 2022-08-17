@@ -14,6 +14,9 @@ function Book( name, author, pages, read ) {
 }
 
 myLibrary.push(new Book("Hobbit", 'RR', '300', false));
+myLibrary.push(new Book("Hobbit", 'RR', '300', false));
+myLibrary.push(new Book("Hobbit", 'RR', '300', false));
+myLibrary.push(new Book("Hobbit", 'RR', '300', false));
 
 let add = document.getElementById("add")
 add.onclick = function addBook() {
@@ -86,6 +89,7 @@ add.onclick = function addBook() {
             book.appendChild(pag);
             
             let red = document.createElement("button");
+            red.classList = 'isItRead';
             if (myLibrary[i].read == true){
                 red.innerText = 'Read';
                 red.classList.add('read');
